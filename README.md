@@ -14,9 +14,6 @@ The logic will not allow panning or zooming outside of the artboard boundaries, 
 
 ![Alt text](readme-png/inputs.png?raw=true "Title")
 
-[text here](readme-png/inputs.png)
-
-[text 2 here](/readme-png/inputs.png)
-
+[Alt text](readme-png/inputs.png)
 
 For the other projects be sure to select a **scene** if nothing is rendering.
