@@ -38,11 +38,11 @@ The workflow is somewhat complex. The rev file is provided, which will help figu
 
 -Assign the joystick handles to the inputs "scale", "pan x", and "pan y". Do not use "pan x joy 1" etc. because those are used for something else.
 
-![Alt text](readme-png/joystick assignment.png?raw=true)
+![Alt text](readme-png/joystick%20assignment.png?raw=true)
 
 -Set the "scale" joystick handle to -100%. This is needed to prevent a scaled view while using the Rive editor for other tasks.
 
-![Alt text](readme-png/joystick 2.png?raw=true)
+![Alt text](readme-png/joystick%202.png?raw=true)
 
 -Select the state machine and delete any the auto generated layer containing one of the created timelines.
 
@@ -52,15 +52,15 @@ The workflow is somewhat complex. The rev file is provided, which will help figu
 
 -Connect the state machines like so:
 
-![Alt text](readme-png/blend state connect.png?raw=true)
+![Alt text](readme-png/blend%20state%20connect.png?raw=true)
 
 -Select the transition arrow from the blend state to the empty state and add a condition named "scale changed". Set it to "false":
 
-![Alt text](readme-png/scale changed condition 1.png?raw=true)
+![Alt text](readme-png/scale%20changed%20condition%201.png?raw=true)
 
 -Now select the transition arrow from the empty state to the blend state and add the same condition: "scale changed" Set this one to "true":
 
-![Alt text](readme-png/scale changed condition 2.png?raw=true)
+![Alt text](readme-png/scale%20changed%20condition%202.png?raw=true)
 
 The empty timeline in the state machine is used for performance reasons. The blend state should only run if panning or zooming is in progress, otherwise it will use resources all the time.
 
@@ -68,11 +68,11 @@ The empty timeline in the state machine is used for performance reasons. The ble
 
 -Select the + button again and select "Mix by Input". For the timeline on the left drop down box select "sale joy 2". From the right drop down box (next to scale joy 2), select "scale" (not "scale changed").
 
-![Alt text](readme-png/blend state setup.png?raw=true)
+![Alt text](readme-png/blend%20state%20setup.png?raw=true)
 
 -Duplicate the scale state machine layer and call it "pan x". Select the blend state and change the timelines to "pan x joy 1" and "pan x joy 2" (2 on the top, 1 on the bottom). Change "scale" next to "pan x joy 2" to "pan x". Select the transition arrow and change both directions to "pan x changed".
 
-![Alt text](readme-png/pan blend state setup.png?raw=true)
+![Alt text](readme-png/pan%20blend%20state%20setup.png?raw=true)
 
 -Create another state machine layer for "pan y" using the same method.
 	
@@ -80,7 +80,7 @@ The empty timeline in the state machine is used for performance reasons. The ble
 
 -With the timeline cursor all the way to the left, key the x and y scale, set at 100%:
 
-![Alt text](readme-png/scale timeline.png?raw=true)
+![Alt text](readme-png/scale%20timeline.png?raw=true)
 
 -Move the timeline cursor all the way to the right and key the scale as 250% for both x and y.
 
@@ -110,7 +110,7 @@ The empty timeline in the state machine is used for performance reasons. The ble
 
 -With the timeline cursor selected all the way to the left, key the joystick handle to -100%:
 	
-![Alt text](readme-png/scale timeline joystick handle key.png?raw=true)
+![Alt text](readme-png/scale%20timeline%20joystick%20handle%20key.png?raw=true)
 	
 -With the same method, key the "scale joy 2" timeline to a joystick handle of +100%.
 
